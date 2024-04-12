@@ -1,0 +1,12 @@
+{
+  "name": "kmuy3558-tracker",
+  "version": "1.0.0",
+  "description": "deco2017 2024",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
