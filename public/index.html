@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet"  href="scss/main.scss"> 
+    <title>Track your Smoothies!</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <p>Deco2017! Week 7 + 8!</p>
+    <div class="container">
+        <div class="header">
+            <h3>Hi! Track your Smoothies:</h3>
+        </div>
+
+        <div class="main">
+            <h1>Add a Smoothie</h1>
+            <form id="addSmoothie">
+                <div>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div>
+                    <label for="ingredients">Ingredients:</label>
+                    <input type="text" id="ingredients" min="0" placeholder="e.g. 'oat milk, mango, kale, sugar'"
+                        step="0.01" required>
+                </div>
+                <div>
+                    <label for="cost">Cost:</label>
+                    <input type="number" id="cost" placeholder="$" required>
+                </div>
+                <button type="submit">Add Smoothie!</button>
+            </form>
+        </div>
+
+        <div class="record">
+            <h1>Past Smoothies</h1>
+            <ul id="pastSmoothies"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>

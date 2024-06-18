@@ -1,0 +1,60 @@
+.container {  display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header header"
+      "main main record record"
+      "main main record record"
+      "main main record record";
+  }
+  
+  .header { grid-area: header; }
+  
+  .main { grid-area: main; }
+  
+  .ingredients { grid-area: ingredients; }
+
+ 
+/* code for responsiveness */ 
+  @media screen and (max-width: 900px) {
+    .container {
+        grid-template-areas:
+        "header"
+        "main"
+        "record";
+  
+        grid-template-columns: 1fr;
+        grid-template-rows:
+        auto 
+        auto 
+        auto 
+    }
+  }
+
+  body {
+    font-family: Monaco, sans-serif;
+    padding: 20px;
+    background-color: #DDDBF1;
+}
+
+button {
+    display: block;
+    width: 50%;
+    cursor: pointer;
+    border-radius: 10px;;
+    padding: 10px;
+    margin: 10px;
+    background: #F5DD90;
+    color: black;
+    border: 1px solid #171614;
+}
+
+#pastSmoothies {
+   background-color: #F5DD90; 
+   border-radius: 25px;
+   padding: 40px;
+   border: 1px solid #171614;
+
+}
